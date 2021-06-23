@@ -16,5 +16,10 @@ namespace win.proyecto
         {
             InitializeComponent();
         }
+
+        private void Formant_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

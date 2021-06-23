@@ -66,5 +66,15 @@ namespace win.proyecto
                 MessageBox.Show("Usuario o contraseña incorrecta");
             }
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
