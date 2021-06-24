@@ -9,7 +9,7 @@ namespace BL.proyecto
 {
     public class ProductosBL
     {
-        public BindingList<producto> ListaProductos {get; set; }
+         public BindingList<producto> ListaProductos {get; set; }
         public ProductosBL()
         {
             ListaProductos = new BindingList<producto>();

@@ -40,11 +40,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Modelo.cs" />
-    <Compile Include="ModelosBL.cs" />
+    <Compile Include="mantenimientoBL.cs" />
     <Compile Include="ProductosBL.cs" />
     <Compile Include="seguridadBL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\DataSources\mantenimientoBL.datasource" />
+    <None Include="Properties\DataSources\mantenimientoBL.manteni.datasource" />
+    <None Include="Properties\DataSources\producto.datasource" />
+    <None Include="Properties\DataSources\ProductosBL.datasource" />
+    <None Include="Properties\DataSources\seguridadBL.datasource" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

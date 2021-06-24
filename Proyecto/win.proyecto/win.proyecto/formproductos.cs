@@ -26,10 +26,5 @@ namespace win.proyecto
         {
 
         }
-
-        private void idTextBox_TextChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }
