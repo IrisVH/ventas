@@ -16,10 +16,5 @@ namespace win.proyecto
         {
             InitializeComponent();
         }
-
-        private void Formclient_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }

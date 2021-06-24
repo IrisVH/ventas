@@ -12,26 +12,22 @@ using System.Windows.Forms;
 namespace win.proyecto
 {
     public partial class formproductos : Form
-    { 
+    {
         ProductosBL _productos;
-
         public formproductos()
         {
             InitializeComponent();
 
             _productos = new ProductosBL();
-
-            listaProductosBindingSource.DataSource = _productos.ObtenerProductos();
+            listaProductosBindingSource.DataSource = _productos.obtenerproductos();
         }
 
         private void formproductos_Load(object sender, EventArgs e)
         {
 
-
-
         }
 
-        private void activoCheckBox_CheckedChanged(object sender, EventArgs e)
+        private void idTextBox_TextChanged(object sender, EventArgs e)
         {
 
         }

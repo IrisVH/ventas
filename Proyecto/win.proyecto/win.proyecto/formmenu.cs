@@ -40,13 +40,14 @@ namespace win.proyecto
 
         private void reporteProductosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            var formanten = new Formant();
-            formanten.MdiParent = this;
-            formanten.Show();
+            var formant = new Formant();
+            formant.MdiParent = this;
+            formant.Show();
         }
 
         private void transaccionesToolStripMenuItem_Click(object sender, EventArgs e)
         {
+           
 
         }
 
