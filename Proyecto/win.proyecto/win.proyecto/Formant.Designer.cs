@@ -94,7 +94,7 @@
             this.mantenimientoBL_manteniBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.mantenimientoBL_manteniBindingNavigator.Name = "mantenimientoBL_manteniBindingNavigator";
             this.mantenimientoBL_manteniBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.mantenimientoBL_manteniBindingNavigator.Size = new System.Drawing.Size(526, 25);
+            this.mantenimientoBL_manteniBindingNavigator.Size = new System.Drawing.Size(592, 25);
             this.mantenimientoBL_manteniBindingNavigator.TabIndex = 0;
             this.mantenimientoBL_manteniBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -110,8 +110,8 @@
             // bindingNavigatorCountItem
             // 
             this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(35, 22);
-            this.bindingNavigatorCountItem.Text = "of {0}";
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(37, 22);
+            this.bindingNavigatorCountItem.Text = "de {0}";
             this.bindingNavigatorCountItem.ToolTipText = "Número total de elementos";
             // 
             // bindingNavigatorDeleteItem
@@ -195,27 +195,25 @@
             // activoLabel
             // 
             activoLabel.AutoSize = true;
-            activoLabel.Location = new System.Drawing.Point(118, 196);
+            activoLabel.Location = new System.Drawing.Point(146, 225);
             activoLabel.Name = "activoLabel";
             activoLabel.Size = new System.Drawing.Size(39, 13);
             activoLabel.TabIndex = 1;
             activoLabel.Text = "activo:";
-            activoLabel.Click += new System.EventHandler(this.activoLabel_Click);
             // 
             // activoCheckBox
             // 
             this.activoCheckBox.DataBindings.Add(new System.Windows.Forms.Binding("CheckState", this.mantenimientoBL_manteniBindingSource, "activo", true));
-            this.activoCheckBox.Location = new System.Drawing.Point(188, 191);
+            this.activoCheckBox.Location = new System.Drawing.Point(216, 220);
             this.activoCheckBox.Name = "activoCheckBox";
             this.activoCheckBox.Size = new System.Drawing.Size(104, 24);
             this.activoCheckBox.TabIndex = 2;
             this.activoCheckBox.UseVisualStyleBackColor = true;
-            this.activoCheckBox.CheckedChanged += new System.EventHandler(this.activoCheckBox_CheckedChanged);
             // 
             // areaLabel
             // 
             areaLabel.AutoSize = true;
-            areaLabel.Location = new System.Drawing.Point(118, 164);
+            areaLabel.Location = new System.Drawing.Point(146, 139);
             areaLabel.Name = "areaLabel";
             areaLabel.Size = new System.Drawing.Size(32, 13);
             areaLabel.TabIndex = 3;
@@ -224,15 +222,15 @@
             // areaTextBox
             // 
             this.areaTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.mantenimientoBL_manteniBindingSource, "Area", true));
-            this.areaTextBox.Location = new System.Drawing.Point(188, 161);
+            this.areaTextBox.Location = new System.Drawing.Point(216, 136);
             this.areaTextBox.Name = "areaTextBox";
-            this.areaTextBox.Size = new System.Drawing.Size(293, 20);
+            this.areaTextBox.Size = new System.Drawing.Size(192, 20);
             this.areaTextBox.TabIndex = 4;
             // 
             // descripcionLabel
             // 
             descripcionLabel.AutoSize = true;
-            descripcionLabel.Location = new System.Drawing.Point(118, 112);
+            descripcionLabel.Location = new System.Drawing.Point(146, 96);
             descripcionLabel.Name = "descripcionLabel";
             descripcionLabel.Size = new System.Drawing.Size(64, 13);
             descripcionLabel.TabIndex = 5;
@@ -241,15 +239,15 @@
             // descripcionTextBox
             // 
             this.descripcionTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.mantenimientoBL_manteniBindingSource, "descripcion", true));
-            this.descripcionTextBox.Location = new System.Drawing.Point(188, 109);
+            this.descripcionTextBox.Location = new System.Drawing.Point(216, 93);
             this.descripcionTextBox.Name = "descripcionTextBox";
-            this.descripcionTextBox.Size = new System.Drawing.Size(293, 20);
+            this.descripcionTextBox.Size = new System.Drawing.Size(192, 20);
             this.descripcionTextBox.TabIndex = 6;
             // 
             // horaLabel
             // 
             horaLabel.AutoSize = true;
-            horaLabel.Location = new System.Drawing.Point(118, 138);
+            horaLabel.Location = new System.Drawing.Point(146, 182);
             horaLabel.Name = "horaLabel";
             horaLabel.Size = new System.Drawing.Size(33, 13);
             horaLabel.TabIndex = 7;
@@ -258,15 +256,15 @@
             // horaTextBox
             // 
             this.horaTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.mantenimientoBL_manteniBindingSource, "Hora", true));
-            this.horaTextBox.Location = new System.Drawing.Point(188, 135);
+            this.horaTextBox.Location = new System.Drawing.Point(216, 179);
             this.horaTextBox.Name = "horaTextBox";
-            this.horaTextBox.Size = new System.Drawing.Size(293, 20);
+            this.horaTextBox.Size = new System.Drawing.Size(192, 20);
             this.horaTextBox.TabIndex = 8;
             // 
             // idLabel
             // 
             idLabel.AutoSize = true;
-            idLabel.Location = new System.Drawing.Point(118, 77);
+            idLabel.Location = new System.Drawing.Point(146, 55);
             idLabel.Name = "idLabel";
             idLabel.Size = new System.Drawing.Size(19, 13);
             idLabel.TabIndex = 9;
@@ -275,16 +273,16 @@
             // idTextBox
             // 
             this.idTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.mantenimientoBL_manteniBindingSource, "Id", true));
-            this.idTextBox.Location = new System.Drawing.Point(188, 74);
+            this.idTextBox.Location = new System.Drawing.Point(216, 52);
             this.idTextBox.Name = "idTextBox";
-            this.idTextBox.Size = new System.Drawing.Size(293, 20);
+            this.idTextBox.Size = new System.Drawing.Size(192, 20);
             this.idTextBox.TabIndex = 10;
             // 
             // Formant
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(526, 230);
+            this.ClientSize = new System.Drawing.Size(592, 345);
             this.Controls.Add(activoLabel);
             this.Controls.Add(this.activoCheckBox);
             this.Controls.Add(areaLabel);

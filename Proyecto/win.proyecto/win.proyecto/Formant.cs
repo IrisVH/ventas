@@ -21,15 +21,5 @@ namespace win.proyecto
             _mantenimient = new mantenimientoBL();
             mantenimientoBL_manteniBindingSource.DataSource = _mantenimient.obtenermantenimientos();
         }
-
-        private void activoCheckBox_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void activoLabel_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
