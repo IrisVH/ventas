@@ -14,8 +14,8 @@ namespace BL.proyecto
         {
             Listamantenimientos = new BindingList<manteni>();
 
-            var manteni1 = new manteni();
-            manteni1.Id = 6;
+             var manteni1 = new manteni();
+            manteni1.Id = 1;
             manteni1.descripcion = "Descargar camion bloques";
             manteni1.Area = "bodega 4";
             manteni1.Hora = 1300;
@@ -24,7 +24,7 @@ namespace BL.proyecto
             Listamantenimientos.Add(manteni1);
 
             var manteni2 = new manteni();
-            manteni2.Id = 9;
+            manteni2.Id = 2;
             manteni2.descripcion = "Clasificacion de varillas";
             manteni2.Area = "Bodega 5  ";
             manteni2.Hora = 1500;
@@ -33,7 +33,7 @@ namespace BL.proyecto
             Listamantenimientos.Add(manteni2);
 
             var manteni3 = new manteni();
-            manteni3.Id = 4;
+            manteni3.Id = 3;
             manteni3.descripcion = "Descargar bolsas de cemento";
             manteni3.Area = "Bodega 2";
             manteni3.Hora = 1700;
@@ -49,6 +49,7 @@ namespace BL.proyecto
             return Listamantenimientos;
 
         }
+        
         public class manteni
         {
             public int Id { get; set; }

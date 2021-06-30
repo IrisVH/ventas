@@ -105,5 +105,10 @@ namespace win.proyecto
             DeshabilitarHabilitarBotones(true);
             Eliminar(0);
         }
+
+        private void idTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
