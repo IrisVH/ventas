@@ -103,8 +103,7 @@ namespace win.proyecto
 
         private void toolStripButtonCancelar_Click(object sender, EventArgs e)
         {
-            DeshabilitarHabilitarBotones(true);
-            Eliminar(0);
+            
         }
 
         private void idTextBox_TextChanged(object sender, EventArgs e)
@@ -114,6 +113,8 @@ namespace win.proyecto
 
         private void toolStripButton1cancelar_Click(object sender, EventArgs e)
         {
+            DeshabilitarHabilitarBotones(true);
+            Eliminar(0);
 
         }
     }
