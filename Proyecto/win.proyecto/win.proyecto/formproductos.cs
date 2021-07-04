@@ -37,7 +37,7 @@ namespace win.proyecto
             listaProductosBindingSource.EndEdit();
             var producto = (producto)listaProductosBindingSource.Current;
             var resultado = _productos.GuardarProducto(producto);
-            if(resultado.Exitoso == true)
+            if (resultado.Exitoso == true)
             {
                 listaProductosBindingSource.ResetBindings(false);
                 DeshabilitarHabilitarBotones(true);
@@ -66,7 +66,8 @@ namespace win.proyecto
 
             bindingNavigatorPositionItem.Enabled = valor;
             bindingNavigatorDeleteItem.Enabled = valor;
-            toolStripButtonCancelar.Visible = !valor;
+            toolStripButton1cancelar.Visible = !valor;
+           
         }
 
         private void bindingNavigatorDeleteItem_Click(object sender, EventArgs e)
@@ -80,14 +81,14 @@ namespace win.proyecto
                     Eliminar(id);
 
                 }
-                    
+
             }
-            
+
         }
 
         private void Eliminar(int id)
         {
-            
+
             var resultado = _productos.EliminarProducto(id);
 
             if (resultado == true)
@@ -107,6 +108,11 @@ namespace win.proyecto
         }
 
         private void idTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStripButton1cancelar_Click(object sender, EventArgs e)
         {
 
         }
