@@ -41,6 +41,7 @@ namespace win.proyecto
             {
                 listaProductosBindingSource.ResetBindings(false);
                 DeshabilitarHabilitarBotones(true);
+                MessageBox.Show("Producto guardado");
 
             }
             else
@@ -115,6 +116,11 @@ namespace win.proyecto
         {
             DeshabilitarHabilitarBotones(true);
             Eliminar(0);
+
+        }
+
+        private void idTextBox_TextChanged_1(object sender, EventArgs e)
+        {
 
         }
     }
