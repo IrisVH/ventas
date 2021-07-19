@@ -55,11 +55,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Formclient.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formclient.Designer.cs">
-      <DependentUpon>Formclient.cs</DependentUpon>
+    <Compile Include="FormClientes.cs" />
+    <Compile Include="FormClientes.Designer.cs">
+      <DependentUpon>FormClientes.cs</DependentUpon>
     </Compile>
     <Compile Include="Formant.cs">
       <SubType>Form</SubType>
@@ -114,8 +112,8 @@
     <EmbeddedResource Include="Formant.resx">
       <DependentUpon>Formant.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formclient.resx">
-      <DependentUpon>Formclient.cs</DependentUpon>
+    <EmbeddedResource Include="FormClientes.resx">
+      <DependentUpon>FormClientes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="formlogin.resx">
       <DependentUpon>formlogin.cs</DependentUpon>
@@ -140,10 +138,12 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\BL.proyecto.CategoriaBL.datasource" />
     <None Include="Properties\DataSources\BL.proyecto.mantenimientoBL+manteni.datasource" />
     <None Include="Properties\DataSources\BL.proyecto.mantenimientoBL.datasource" />
     <None Include="Properties\DataSources\BL.proyecto.ProductosBL.datasource" />
     <None Include="Properties\DataSources\BL.proyecto.seguridadBL.datasource" />
+    <None Include="Properties\DataSources\BL.proyecto.TiposBL.datasource" />
     <None Include="Properties\DataSources\producto.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

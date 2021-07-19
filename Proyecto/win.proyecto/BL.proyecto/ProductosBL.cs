@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BL.proyecto;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data.Entity;
@@ -26,6 +27,14 @@ namespace BL.proyecto
 
             return ListaProductos;
         }
+        public void CancelarCambios()
+        {
+            foreach (var item in _contexto.ChangeTracker.Entries())
+            {
+                item.State = EntityState.Unchanged;
+                item.Reload();
+            }
+        }
 
         public Resultado GuardarProducto(producto producto)
         {
@@ -40,7 +49,6 @@ namespace BL.proyecto
             resultado.Exitoso = true;
             return resultado;
         }
-
         public void AgregarProducto()
         {
             var nuevoProducto = new producto();
@@ -76,6 +84,20 @@ namespace BL.proyecto
                 resultado.Exitoso = false;
 
             }
+
+            if (producto.CategoriaId == 0)
+            {
+                resultado.Mensaje = "Seleccione una categoria";
+                resultado.Exitoso = false;
+
+            }
+
+            if (producto.TipoId == 0)
+            {
+                resultado.Mensaje = "Seleccione un tipo";
+                resultado.Exitoso = false;
+
+            }
             if (producto.precio < 0)
             {
                 resultado.Mensaje = "El precio debe ser mayor que cero";
@@ -95,6 +117,11 @@ public class producto
     public string descripcion { get; set; }
     public double precio { get; set; }
     public int existencia { get; set; }
+    public int TipoId { get; set; }
+    public Tipo Tipo { get; set; }
+    public int CategoriaId { get; set; }
+    public Categoria Categoria { get; set; }
+    public byte[] foto { get; set; }
     public bool activo { get; set; }
 }
 

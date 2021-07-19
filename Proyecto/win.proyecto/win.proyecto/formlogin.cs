@@ -13,13 +13,13 @@ namespace win.proyecto
 {
     public partial class formlogin : Form
     {
-        seguridadBL _seguridad;
+        SeguridadBL _seguridad;
 
         public formlogin()
         {
             InitializeComponent();
 
-            _seguridad = new seguridadBL();
+            _seguridad = new SeguridadBL();
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -65,6 +65,11 @@ namespace win.proyecto
                 {
                 MessageBox.Show("Usuario o contraseña incorrecta");
             }
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

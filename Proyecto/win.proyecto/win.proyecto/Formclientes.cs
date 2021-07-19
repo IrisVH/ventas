@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BL.proyecto;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,11 +11,5 @@ using System.Windows.Forms;
 
 namespace win.proyecto
 {
-    public partial class Formclient : Form
-    {
-        public Formclient()
-        {
-            InitializeComponent();
-        }
-    }
+    
 }

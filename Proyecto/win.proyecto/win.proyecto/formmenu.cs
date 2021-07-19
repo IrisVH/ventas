@@ -52,9 +52,7 @@ namespace win.proyecto
 
         private void reporteClientesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            var formclientes = new Formclient();
-            formclientes.MdiParent = this;
-            formclientes.Show();
+            
         }
 
         private void transaccionesDelDiaToolStripMenuItem_Click(object sender, EventArgs e)
@@ -83,6 +81,11 @@ namespace win.proyecto
             var formpro = new Formprod();
             formpro.MdiParent = this;
             formpro.Show();
+        }
+
+        private void clientesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+           
         }
     }
 }
