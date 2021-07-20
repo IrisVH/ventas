@@ -85,7 +85,9 @@ namespace win.proyecto
 
         private void clientesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-           
+            var FormClientes = new FormClientes();
+            FormClientes.MdiParent = this;
+            FormClientes.Show();
         }
     }
 }

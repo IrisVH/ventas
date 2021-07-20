@@ -135,8 +135,9 @@ namespace win.proyecto
 
         private void toolStripButton1cancelar_Click(object sender, EventArgs e)
         {
+            _productos.CancelarCambios();
             DeshabilitarHabilitarBotones(true);
-            Eliminar(0);
+         
 
         }
 

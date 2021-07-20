@@ -22,6 +22,7 @@ namespace BL.proyecto
            
         }
 
+        public DbSet<Clientes> Clientes { get; set; }
         public DbSet<producto> Productos { get; set; }
         public DbSet<Tipo> Tipos { get; set; }
         public DbSet<Categoria> Categoria { get; set; }

@@ -31,7 +31,7 @@ namespace BL.proyecto
             contexto.Categoria.Add(categoria3);
 
             var tipo1 = new Tipo();
-            tipo1.Descripcion = "Puertas";
+            tipo1.Descripcion = "Construccion";
             contexto.Tipos.Add(tipo1);
 
             var tipo2 = new Tipo();
@@ -41,6 +41,15 @@ namespace BL.proyecto
             var tipo3 = new Tipo();
             tipo3.Descripcion = "Cables";
             contexto.Tipos.Add(tipo3);
+
+            var cliente1 = new Clientes();
+            cliente1.Nombre = "Juan Reyes";
+            contexto.Clientes.Add(cliente1);
+
+            var cliente2 = new Clientes();
+            cliente2.Nombre = "Lucas Ramos";
+            contexto.Clientes.Add(cliente2);
+
 
             base.Seed(contexto);
 
