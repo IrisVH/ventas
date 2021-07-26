@@ -89,5 +89,12 @@ namespace win.proyecto
             FormClientes.MdiParent = this;
             FormClientes.Show();
         }
+
+        private void facturaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var FormFactura = new FormFactura();
+            FormFactura.MdiParent = this;
+            FormFactura.Show();
+        }
     }
 }

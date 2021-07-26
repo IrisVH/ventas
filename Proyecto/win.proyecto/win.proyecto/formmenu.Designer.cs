@@ -45,6 +45,7 @@
             this.reportesProduccionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.seguridadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.inicioDeSesionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.facturaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -68,7 +69,8 @@
             this.productosToolStripMenuItem,
             this.clientesToolStripMenuItem,
             this.rentarToolStripMenuItem,
-            this.codigoDeProductosToolStripMenuItem});
+            this.codigoDeProductosToolStripMenuItem,
+            this.facturaToolStripMenuItem});
             this.inicioToolStripMenuItem.Name = "inicioToolStripMenuItem";
             this.inicioToolStripMenuItem.Size = new System.Drawing.Size(48, 20);
             this.inicioToolStripMenuItem.Text = "Inicio";
@@ -184,6 +186,13 @@
             this.inicioDeSesionToolStripMenuItem.Text = "Inicio de Sesion";
             this.inicioDeSesionToolStripMenuItem.Click += new System.EventHandler(this.inicioDeSesionToolStripMenuItem_Click);
             // 
+            // facturaToolStripMenuItem
+            // 
+            this.facturaToolStripMenuItem.Name = "facturaToolStripMenuItem";
+            this.facturaToolStripMenuItem.Size = new System.Drawing.Size(186, 22);
+            this.facturaToolStripMenuItem.Text = "Factura";
+            this.facturaToolStripMenuItem.Click += new System.EventHandler(this.facturaToolStripMenuItem_Click);
+            // 
             // formmenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -223,6 +232,7 @@
         private System.Windows.Forms.ToolStripMenuItem reportesContabilidadToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem reportesDePlanillaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem reportesProduccionToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem facturaToolStripMenuItem;
     }
 }
 

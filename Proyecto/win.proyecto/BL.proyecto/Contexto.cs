@@ -27,6 +27,7 @@ namespace BL.proyecto
         public DbSet<Tipo> Tipos { get; set; }
         public DbSet<Categoria> Categoria { get; set; }
         public DbSet<Usuarios> Usuario { get; set; }
-        
+        public DbSet<Facturas> Factura { get; set; }
+
     }   
 }

@@ -84,6 +84,14 @@ namespace BL.proyecto
                 return resultado;
             }
 
+            if (cliente == null)
+            {
+                resultado.Mensaje = "Agregue un cliente valido";
+                resultado.Exitoso = false;
+
+                return resultado;
+            }
+
             if (string.IsNullOrEmpty(cliente.Nombre) == true)
             {
                 resultado.Mensaje = "Ingrese el nombre del cliente";

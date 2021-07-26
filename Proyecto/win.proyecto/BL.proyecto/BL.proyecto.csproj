@@ -55,6 +55,7 @@
     <Compile Include="ClientesBL.cs" />
     <Compile Include="Contexto.cs" />
     <Compile Include="DatosdeInicio.cs" />
+    <Compile Include="FacturasBL.cs" />
     <Compile Include="mantenimientoBL.cs" />
     <Compile Include="ProductosBL.cs" />
     <Compile Include="seguridadBL.cs" />
