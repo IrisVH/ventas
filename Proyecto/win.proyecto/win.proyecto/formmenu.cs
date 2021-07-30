@@ -78,9 +78,7 @@ namespace win.proyecto
 
         private void reportesProduccionToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            var formpro = new Formprod();
-            formpro.MdiParent = this;
-            formpro.Show();
+            
         }
 
         private void clientesToolStripMenuItem_Click(object sender, EventArgs e)
@@ -95,6 +93,21 @@ namespace win.proyecto
             var FormFactura = new FormFactura();
             FormFactura.MdiParent = this;
             FormFactura.Show();
+        }
+
+        private void reporteDeProductosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var formReporteProductos = new FormReporteProductos();
+            formReporteProductos.MdiParent = this;
+            formReporteProductos.Show();
+        }
+
+        private void reporteDeFacturasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var formReporteFacturas = new FormReporteFacturas();
+            formReporteFacturas.MdiParent = this;
+            formReporteFacturas.Show();
+
         }
     }
 }
