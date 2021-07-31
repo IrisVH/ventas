@@ -109,5 +109,18 @@ namespace win.proyecto
             formReporteFacturas.Show();
 
         }
+
+        private void reporteDeVentaPorClienteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void reporteVentasTotalesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var formReporteVentasTotales = new FormVentasTotales();
+            formReporteVentasTotales.MdiParent = this;
+            formReporteVentasTotales.Show();
+
+        }
     }
 }

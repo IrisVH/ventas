@@ -45,9 +45,11 @@
             this.reportesDePlanillaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reportesProduccionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reporteDeProductosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.reporteDeFacturasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.reporteDeVentaPorClienteToolStripMenuItem = new System.Windows.Forms.ToolStripSeparator();
+            this.reporteVentasTotalesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.seguridadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.inicioDeSesionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.reporteDeFacturasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -189,6 +191,29 @@
             this.reporteDeProductosToolStripMenuItem.Text = "Reporte de Productos";
             this.reporteDeProductosToolStripMenuItem.Click += new System.EventHandler(this.reporteDeProductosToolStripMenuItem_Click);
             // 
+            // reporteDeFacturasToolStripMenuItem
+            // 
+            this.reporteDeFacturasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.reporteDeVentaPorClienteToolStripMenuItem,
+            this.reporteVentasTotalesToolStripMenuItem});
+            this.reporteDeFacturasToolStripMenuItem.Name = "reporteDeFacturasToolStripMenuItem";
+            this.reporteDeFacturasToolStripMenuItem.Size = new System.Drawing.Size(191, 22);
+            this.reporteDeFacturasToolStripMenuItem.Text = "Reporte de facturas";
+            this.reporteDeFacturasToolStripMenuItem.Click += new System.EventHandler(this.reporteDeFacturasToolStripMenuItem_Click);
+            // 
+            // reporteDeVentaPorClienteToolStripMenuItem
+            // 
+            this.reporteDeVentaPorClienteToolStripMenuItem.Name = "reporteDeVentaPorClienteToolStripMenuItem";
+            this.reporteDeVentaPorClienteToolStripMenuItem.Size = new System.Drawing.Size(189, 6);
+            this.reporteDeVentaPorClienteToolStripMenuItem.Click += new System.EventHandler(this.reporteDeVentaPorClienteToolStripMenuItem_Click);
+            // 
+            // reporteVentasTotalesToolStripMenuItem
+            // 
+            this.reporteVentasTotalesToolStripMenuItem.Name = "reporteVentasTotalesToolStripMenuItem";
+            this.reporteVentasTotalesToolStripMenuItem.Size = new System.Drawing.Size(192, 22);
+            this.reporteVentasTotalesToolStripMenuItem.Text = "Reporte ventas Totales";
+            this.reporteVentasTotalesToolStripMenuItem.Click += new System.EventHandler(this.reporteVentasTotalesToolStripMenuItem_Click);
+            // 
             // seguridadToolStripMenuItem
             // 
             this.seguridadToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -203,13 +228,6 @@
             this.inicioDeSesionToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
             this.inicioDeSesionToolStripMenuItem.Text = "Inicio de Sesion";
             this.inicioDeSesionToolStripMenuItem.Click += new System.EventHandler(this.inicioDeSesionToolStripMenuItem_Click);
-            // 
-            // reporteDeFacturasToolStripMenuItem
-            // 
-            this.reporteDeFacturasToolStripMenuItem.Name = "reporteDeFacturasToolStripMenuItem";
-            this.reporteDeFacturasToolStripMenuItem.Size = new System.Drawing.Size(191, 22);
-            this.reporteDeFacturasToolStripMenuItem.Text = "Reporte de facturas";
-            this.reporteDeFacturasToolStripMenuItem.Click += new System.EventHandler(this.reporteDeFacturasToolStripMenuItem_Click);
             // 
             // formmenu
             // 
@@ -253,6 +271,8 @@
         private System.Windows.Forms.ToolStripMenuItem facturaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem reporteDeProductosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem reporteDeFacturasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator reporteDeVentaPorClienteToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem reporteVentasTotalesToolStripMenuItem;
     }
 }
 
