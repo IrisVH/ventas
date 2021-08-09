@@ -27,6 +27,17 @@ namespace BL.proyecto
 
             return ListaProductos;
         }
+
+        public BindingList<producto> obtenerproductos(string buscar)
+        {
+            var query = _contexto.Productos
+                .Where(r => r.descripcion.ToLower().Contains(buscar.ToLower()))
+                .OrderBy(producto => producto.descripcion).ToList();
+            
+
+            ListaProductos = new BindingList<producto>(query);
+            return ListaProductos;
+        }
         public void CancelarCambios()
         {
             foreach (var item in _contexto.ChangeTracker.Entries())

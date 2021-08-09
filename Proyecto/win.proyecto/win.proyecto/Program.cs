@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BL.proyecto;
+using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.IO;
@@ -10,6 +11,7 @@ namespace win.proyecto
 {
     static class Program
     {
+        public static Usuarios UsuarioLogueado;
         /// <summary>
         /// Punto de entrada principal para la aplicación.
         /// </summary>

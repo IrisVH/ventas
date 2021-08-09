@@ -185,5 +185,45 @@ namespace win.proyecto
         {
 
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                Buscar();
+
+            }
+            
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+            Buscar();
+        }
+        private void Buscar()
+        {
+            var busqueda = textBox1.Text;
+            if (string.IsNullOrEmpty(busqueda))
+            {
+                listaProductosBindingSource.DataSource = _productos.obtenerproductos();
+
+            }
+            else
+            {
+                listaProductosBindingSource.DataSource = _productos.obtenerproductos(busqueda);
+            }
+
+        }
     }
 }

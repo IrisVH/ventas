@@ -21,6 +21,14 @@ namespace win.proyecto
         {
             var Formlogin = new formlogin();
             Formlogin.ShowDialog();
+
+            if (Program.UsuarioLogueado != null)
+            {
+                toolStripStatusLabel1.Text = "Usuario:"
+                + Program.UsuarioLogueado.Nombre;
+
+                
+            }
         }
 
         private void inicioDeSesionToolStripMenuItem_Click(object sender, EventArgs e)

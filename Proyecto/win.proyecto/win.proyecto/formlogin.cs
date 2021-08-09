@@ -55,10 +55,15 @@ namespace win.proyecto
             usuario = textBox1.Text;
             contrasena = textBox2.Text;
 
-          var resultado =  _seguridad.Autorizar(usuario, contrasena);
+            button1.Enabled = false;
+            button1.Text = "Verificando...";
+            Application.DoEvents();
 
-            if (resultado == true)
+            var usuarioDB =  _seguridad.Autorizar(usuario, contrasena);
+
+            if (usuarioDB != null)
             {
+                Program.UsuarioLogueado = usuarioDB;
                 this.Close();
             }
             else
@@ -69,6 +74,23 @@ namespace win.proyecto
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
+
+        }
+
+        private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar==Convert.ToChar(Keys.Enter)&& !string.IsNullOrEmpty(textBox1.Text))
+            {
+                textBox2.Focus();
+            }
+        }
+
+        private void textBox2_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == Convert.ToChar(Keys.Enter) && !string.IsNullOrEmpty(textBox1.Text))
+            {
+                button1.PerformClick();
+            }
 
         }
     }

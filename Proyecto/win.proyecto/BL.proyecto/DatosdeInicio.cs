@@ -18,6 +18,18 @@ namespace BL.proyecto
 
             contexto.Usuario.Add(usuarioAdmin);
 
+            var usuariocaja = new Usuarios();
+            usuariocaja.Nombre = "caja";
+            usuariocaja.Contrasena = "456";
+
+            contexto.Usuario.Add(usuariocaja);
+
+            var usuariorrhh = new Usuarios();
+            usuariorrhh.Nombre = "rrhh";
+            usuariorrhh.Contrasena = "123";
+
+            contexto.Usuario.Add(usuariorrhh);
+
             var categoria1 = new Categoria();
             categoria1.Descripcion = "Equipo de construccion";
             contexto.Categoria.Add(categoria1);
